@@ -1,3 +1,30 @@
+## Unreleased
+
+IMPROVEMENTS:
+
+* Update package name syntax in userdata script to prevent breakage when installing latest versions of Vault enterprise.
+* Update examples directory with quickstart file that reduces number of steps to
+  provision pre-reqs
+* Remove data sources for AWS subnets and allow user to explicitly specify
+  private subnet IDs in main module
+* Update main module outputs
+* Update default Vault version
+* Update Terraform version pin
+* Add `permissions_boundary` variable to support creating the IAM Role with a permissions boundary
+
+## 1.0.0 (September 22, 2021)
+
+IMPROVEMENTS:
+
+* Updated README
+* Break code into submodules and add submodule READMEs
+* Deploy Vault nodes into private subnets for better security
+* Better reflect Vault reference architecture and deployment guide
+* Require TLS certs on nodes and load balancers
+* Remove lambda functions and use autopilot features for server cleanup
+* Tighten file/folder permissions created in userdata script
+* Add AWS Session Manager capability for logging into nodes
+
 ## 0.2.3 (February 04, 2021)
 
 IMPROVEMENTS:
